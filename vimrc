@@ -68,6 +68,9 @@ set splitbelow splitright
 " Auto-delete all trailing whitespace right before save is executed
 autocmd BufWritePre * %s/\s\+$//e
 
+" Auto-run ctags -R right after save is executed
+autocmd BufWritePost *.jai,*.c,*.h,*.cpp,*.hpp,*.php,*.rs silent! !ctags -R
+
 " Tells vim to look multiple folders deep when
 " using :find or autocompleting
 set path+=**
