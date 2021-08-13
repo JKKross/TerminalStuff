@@ -110,6 +110,9 @@ let mapleader = " "
 " My main machine is MacBook Pro with touchbar, hence:
 imap jj <Esc>
 
+" Make ":new<Return>" open a new blank file in full window instead of horizontal split
+nnoremap :new<Return> :new<Return><C-W><C-K>:q<Return>
+
 " Indentation
 nnoremap > 0i<Tab><Esc>$
 nnoremap < 0x
