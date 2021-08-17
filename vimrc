@@ -75,6 +75,8 @@ set path+=**
 " Configure netrw to open folders in a tree
 let g:netrw_liststyle=3
 
+set number relativenumber
+
 " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 "     COLORS
 " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -97,6 +99,9 @@ highlight Visual       ctermfg=White ctermbg=Gray
 
 highlight StatusLine   ctermfg=Cyan ctermbg=White
 highlight StatusLineNC ctermfg=Gray
+
+highlight LineNr       ctermfg=Gray
+highlight CursorLineNr ctermfg=Red
 
 " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 "     REMAPS
